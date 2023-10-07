@@ -1,11 +1,52 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+      }
+      .container {
+        /* opacity: 0.5 */
+        background-color: black;
+      }
+
+      .back-img {
+        width: 100vw;
+        height: 100vh;
+        background-image: url("./beer_bg_02.jpg");
+        background-position: center;
+        background-size: cover;
+      }
+      .beer-wrap {
+        display: flex;
+        flex-direction: row;
+      }
+      .beer-box {
+        display: flex;
+        flex-direction: row;
+        width: 50%;
+      }
+    </style>
   </head>
   <body>
-    <div>test</div>
+    <div class="container">
+      <div class="back-img">
+        <div class="beer-wrap">
+          <div class="beer-box">
+            <div class="beer-img">
+              <img src="./img/01.jpg" alt="" />
+            </div>
+            <div class="beer-info"></div>
+          </div>
+          <div class="beer-box">
+            <img src="./img/02.jpeg" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
